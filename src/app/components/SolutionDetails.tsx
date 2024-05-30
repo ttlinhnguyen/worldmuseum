@@ -33,7 +33,7 @@ export default function SolutionDetails() {
             id: "ai-recognition",
             media: (
                 <Image
-                    src="/ocr-cursive.jpg"
+                    src="https://ttlinhnguyen.github.io/worldmuseum/ocr-cursive.jpg"
                     alt="Optical Character Recognition (OCR) for handwriting"
                     width={500}
                     height={500}
