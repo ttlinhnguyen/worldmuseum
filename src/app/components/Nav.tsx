@@ -1,3 +1,4 @@
+import React from "react";
 import NAV_ITEMS from "../data/navItems";
 
 export default function Nav({ ...props }) {

@@ -1,5 +1,7 @@
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import SOLUTIONS from "../data/solutions";
+
 export default function Solutions() {
     return (
         <div className="container grid md:grid-cols-3 mx-auto p-5 gap-5">
