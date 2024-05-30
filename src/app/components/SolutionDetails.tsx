@@ -3,6 +3,7 @@
 import React from "react";
 import Model3D from "./Model3D";
 import LottiePlayer from "./LottiePlayer";
+import Image from "next/image";
 
 export default function SolutionDetails() {
     const DETAILS = [
@@ -30,7 +31,15 @@ export default function SolutionDetails() {
         },
         {
             id: "ai-recognition",
-            media: "abc",
+            media: (
+                <Image
+                    src="/ocr-cursive.jpg"
+                    alt="Optical Character Recognition (OCR) for handwriting"
+                    width={500}
+                    height={500}
+                    className="w-full h-full"
+                />
+            ),
             title: "AI Recognition",
             description: "Lorem ipsum",
         },
