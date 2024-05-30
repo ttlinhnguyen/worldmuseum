@@ -16,7 +16,12 @@ const config: Config = {
         },
         container: {
             center: true,
-        }
+            screens: {
+                lg: "800px",
+                xl: "900px",
+                "2xl": "1000px",
+            },
+        },
     },
     plugins: [],
 };
