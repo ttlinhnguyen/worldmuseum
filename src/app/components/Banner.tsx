@@ -1,4 +1,7 @@
+"use client";
+
 import React from "react";
+import FadeInDiv from "./FadeInDiv";
 
 export default function Banner() {
     return (
@@ -11,7 +14,7 @@ export default function Banner() {
             }}
         >
             <div className="absolute w-full h-1/2 bottom-0 left-0 bg-gradient-to-t from-black to-transparent"></div>
-            <div className="container">
+            <FadeInDiv className="container">
                 <div className="text-6xl text-white/80 font-medium">
                     Digitisation
                     <br />
@@ -27,7 +30,7 @@ export default function Banner() {
                         Unsplash
                     </a>
                 </div>
-            </div>
+            </FadeInDiv>
         </div>
     );
 }

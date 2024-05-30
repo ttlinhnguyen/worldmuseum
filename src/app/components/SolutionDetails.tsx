@@ -4,6 +4,7 @@ import React from "react";
 import Model3D from "./Model3D";
 import LottiePlayer from "./LottiePlayer";
 import Image from "next/image";
+import FadeInDiv from "./FadeInDiv";
 
 export default function SolutionDetails() {
     const DETAILS = [
@@ -59,7 +60,7 @@ export default function SolutionDetails() {
         <>
             {DETAILS.map((item, index) => {
                 return (
-                    <div
+                    <FadeInDiv
                         key={index}
                         id={item.id}
                         className={`container p-5 justify-center flex flex-wrap gap-5 ${
@@ -81,7 +82,7 @@ export default function SolutionDetails() {
                             </h3>
                             <div>{item.description}</div>
                         </div>
-                    </div>
+                    </FadeInDiv>
                 );
             })}
         </>
