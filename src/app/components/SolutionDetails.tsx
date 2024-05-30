@@ -1,4 +1,9 @@
+"use client";
+
+import React from "react";
 import Model3D from "./Model3D";
+import LottiePlayer from "./LottiePlayer";
+
 export default function SolutionDetails() {
     const DETAILS = [
         {
@@ -6,7 +11,9 @@ export default function SolutionDetails() {
             title: "3D Modelling",
             description: (
                 <div>
-                    <div className="text-xs italic">Click and hold to rotate. Scroll to zoom</div>
+                    <div className="text-xs italic">
+                        Click and hold to rotate. Scroll to zoom
+                    </div>
                     <div>Lorem ipsum</div>
                 </div>
             ),
@@ -26,7 +33,12 @@ export default function SolutionDetails() {
             description: "Lorem ipsum",
         },
         {
-            media: "abc",
+            media: (
+                <LottiePlayer
+                    src="https://lottie.host/7fe903d7-d7a5-48e8-a79b-a63ba6f3b4d4/RGeA8VoI3A.json"
+                    className="w-full h-full"
+                />
+            ),
             title: "RFID Tracking",
             description: "Lorem ipsum",
         },
@@ -37,15 +49,20 @@ export default function SolutionDetails() {
                 return (
                     <div
                         key={index}
-                        className={`container mx-auto p-5 justify-center flex flex-wrap gap-5 ${
+                        className={`container mx-auto max-w-5xl p-5 justify-center flex flex-wrap gap-5 ${
                             index % 2 == 0 ? "flex-row" : "flex-row-reverse"
                         }`}
                     >
-                        <div className="w-screen md:w-96 h-96 rounded-lg drop-shadow bg-black">
-                            {item.media}
+                        <div className="w-screen md:w-96">
+                            <div
+                                className="place-content-center rounded-lg drop-shadow bg-gradient-to-b from-slate-950 to-slate-700"
+                                style={{ height: "30rem" }}
+                            >
+                                {item.media}
+                            </div>
                             <div className="text-xs">{item.credit}</div>
                         </div>
-                        <div className="w-full max-w-2xl">
+                        <div className="flex-auto">
                             <h3 className="text-3xl font-medium">
                                 {item.title}
                             </h3>
