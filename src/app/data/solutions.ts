@@ -17,7 +17,7 @@ const SOLUTIONS = [
     {
         icon: faTags,
         name: "RFID Tracking",
-        description: "Cheap, Reliable tracking",
+        description: "Affordable, Reliable, and Secured object tracking",
         path: "#rfid-tracking",
     },
 ];
