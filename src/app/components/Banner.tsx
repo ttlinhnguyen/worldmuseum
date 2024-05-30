@@ -3,15 +3,16 @@ import React from "react";
 export default function Banner() {
     return (
         <div
-            className="bg-cover bg-gray-300 bg-blend-multiply bg-center p-10 place-content-center"
+            className="relative bg-cover bg-gray-300 bg-blend-multiply bg-center p-10 place-content-center"
             style={{
                 backgroundImage:
                     'url("https://images.unsplash.com/photo-1451187580459-43490279c0fa")',
-                height: "40rem",
+                height: "50rem",
             }}
         >
+            <div className="absolute w-full h-1/2 bottom-0 left-0 bg-gradient-to-t from-black to-transparent"></div>
             <div className="container">
-                <div className="text-5xl text-white/80 font-medium">
+                <div className="text-6xl text-white/80 font-medium">
                     Digitisation
                     <br />
                     of World Museum
