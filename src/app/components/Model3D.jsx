@@ -10,9 +10,7 @@ export default function Model3D() {
         <Suspense fallback={<span>Loading...</span>}>
             <Canvas shadows camera={{ position: [10, 4, 0], fov: 5.5 }}>
                 <Rotate>
-                    <Suspense>
-                        <Model />
-                    </Suspense>
+                    <Model />
                 </Rotate>
                 <OrbitControls makeDefault />
             </Canvas>
@@ -21,7 +19,9 @@ export default function Model3D() {
 }
 
 function Model() {
-    const model = useGLTF("/cesar_louvre_museum/scene.gltf");
+    const model = useGLTF(
+        "https://ttlinhnguyen.github.io/worldmuseum/cesar_louvre_museum/scene.gltf"
+    );
     return <primitive object={model.scene} position={[0, -0.2, 0]} />;
 }
 
