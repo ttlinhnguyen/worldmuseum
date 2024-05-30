@@ -9,9 +9,9 @@ export default function Nav({ ...props }) {
                 </h1>
             </div>
             <div className="grid grid-cols-3">
-                {NAV_ITEMS.map((item) => {
+                {NAV_ITEMS.map((item, index) => {
                     return (
-                        <div>
+                        <div key={index}>
                             <a href={item.path}>{item.name}</a>
                         </div>
                     );

@@ -21,6 +21,7 @@ export default function SolutionDetails() {
             {DETAILS.map((item, index) => {
                 return (
                     <div
+                        key={index}
                         className={`container mx-auto p-3 justify-center flex flex-wrap gap-5 ${
                             index % 2 == 0 ? "flex-row" : "flex-row-reverse"
                         }`}
