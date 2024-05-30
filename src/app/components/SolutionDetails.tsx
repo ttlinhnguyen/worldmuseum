@@ -1,19 +1,34 @@
+import Model3D from "./Model3D";
 export default function SolutionDetails() {
     const DETAILS = [
         {
-            media: "abc",
+            media: <Model3D />,
             title: "3D Modelling",
-            description: "def",
+            description: (
+                <div>
+                    <div className="text-xs italic">Click and hold to rotate. Scroll to zoom</div>
+                    <div>Lorem ipsum</div>
+                </div>
+            ),
+            credit: (
+                <div>
+                    <a href="https://skfb.ly/ZZBB">César - Louvre Museum</a> by
+                    Benjamin Bardou is licensed under{" "}
+                    <a href="http://creativecommons.org/licenses/by/4.0/">
+                        Creative Commons Attribution
+                    </a>
+                </div>
+            ),
         },
         {
             media: "abc",
             title: "AI Recognition",
-            description: "def",
+            description: "Lorem ipsum",
         },
         {
             media: "abc",
             title: "RFID Tracking",
-            description: "def",
+            description: "Lorem ipsum",
         },
     ];
     return (
@@ -22,12 +37,13 @@ export default function SolutionDetails() {
                 return (
                     <div
                         key={index}
-                        className={`container mx-auto p-3 justify-center flex flex-wrap gap-5 ${
+                        className={`container mx-auto p-5 justify-center flex flex-wrap gap-5 ${
                             index % 2 == 0 ? "flex-row" : "flex-row-reverse"
                         }`}
                     >
-                        <div className="w-screen md:w-96 h-96 rounded-lg drop-shadow bg-slate-200">
+                        <div className="w-screen md:w-96 h-96 rounded-lg drop-shadow bg-black">
                             {item.media}
+                            <div className="text-xs">{item.credit}</div>
                         </div>
                         <div className="w-full max-w-2xl">
                             <h3 className="text-3xl font-medium">
