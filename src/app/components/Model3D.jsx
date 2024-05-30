@@ -3,23 +3,11 @@
 import React from "react";
 import { Suspense, useRef } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { useGLTF, OrbitControls } from "@react-three/drei";
-import Image from "next/image";
+import { useGLTF, OrbitControls, useProgress } from "@react-three/drei";
 
 export default function Model3D() {
     return (
-        <Suspense
-            fallback={
-                <div
-                    className="text-white/70 text-center w-full h-full bg-cover place-content-center rounded-lg"
-                    style={{
-                        backgroundImage: `url("https://ttlinhnguyen.github.io/worldmuseum/cesar_louvre_museum/scene.png")`,
-                    }}
-                >
-                    Loading 3D Model...
-                </div>
-            }
-        >
+        <Suspense fallback={<Loader />}>
             <Canvas
                 shadows
                 camera={{ position: [10, 4, 0], fov: 5.5 }}
@@ -31,6 +19,20 @@ export default function Model3D() {
                 <OrbitControls makeDefault />
             </Canvas>
         </Suspense>
+    );
+}
+
+function Loader() {
+    const { progress } = useProgress();
+    return (
+        <div
+            className="text-white/70 text-center w-full h-full bg-cover place-content-center rounded-lg"
+            style={{
+                backgroundImage: `url("https://ttlinhnguyen.github.io/worldmuseum/cesar_louvre_museum/scene.png")`,
+            }}
+        >
+            Loading 3D Model... ({progress.toFixed(2)}%)
+        </div>
     );
 }
 
