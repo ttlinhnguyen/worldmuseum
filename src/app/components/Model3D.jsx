@@ -19,9 +19,7 @@ export default function Model3D() {
 }
 
 function Model() {
-    const model = useGLTF(
-        "https://ttlinhnguyen.github.io/worldmuseum/cesar_louvre_museum/scene.gltf"
-    );
+    const model = useGLTF("/cesar_louvre_museum/scene.gltf");
     return <primitive object={model.scene} position={[0, -0.2, 0]} />;
 }
 
