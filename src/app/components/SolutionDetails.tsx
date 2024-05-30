@@ -7,6 +7,7 @@ import LottiePlayer from "./LottiePlayer";
 export default function SolutionDetails() {
     const DETAILS = [
         {
+            id: "model-3d",
             media: <Model3D />,
             title: "3D Modelling",
             description: (
@@ -28,11 +29,13 @@ export default function SolutionDetails() {
             ),
         },
         {
+            id: "ai-recognition",
             media: "abc",
             title: "AI Recognition",
             description: "Lorem ipsum",
         },
         {
+            id: "rfid-tracking",
             media: (
                 <LottiePlayer
                     src="https://lottie.host/7fe903d7-d7a5-48e8-a79b-a63ba6f3b4d4/RGeA8VoI3A.json"
@@ -49,6 +52,7 @@ export default function SolutionDetails() {
                 return (
                     <div
                         key={index}
+                        id={item.id}
                         className={`container mx-auto max-w-5xl p-5 justify-center flex flex-wrap gap-5 ${
                             index % 2 == 0 ? "flex-row" : "flex-row-reverse"
                         }`}
@@ -63,7 +67,7 @@ export default function SolutionDetails() {
                             <div className="text-xs">{item.credit}</div>
                         </div>
                         <div className="flex-auto">
-                            <h3 className="text-3xl font-medium">
+                            <h3 className="text-3xl font-medium pb-5">
                                 {item.title}
                             </h3>
                             <div>{item.description}</div>

@@ -1,5 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import SOLUTIONS from "../data/solutions";
 
 export default function Solutions() {
@@ -13,6 +14,13 @@ export default function Solutions() {
                         </div>
                         <div className="text-xl font-medium">{item.name}</div>
                         <div>{item.description}</div>
+                        <a href={item.path} title="See more">
+                            <FontAwesomeIcon
+                                icon={faArrowDown}
+                                size="lg"
+                                className="p-2"
+                            />
+                        </a>
                     </div>
                 );
             })}
