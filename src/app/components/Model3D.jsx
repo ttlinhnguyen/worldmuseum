@@ -5,14 +5,14 @@ import { Suspense, useRef } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { useGLTF, OrbitControls } from "@react-three/drei";
 
-useGLTF.preload("/cesar_louvre_museum/scene.gltf");
-
 export default function Model3D() {
     return (
         <Suspense fallback={<span>Loading...</span>}>
             <Canvas shadows camera={{ position: [10, 4, 0], fov: 5.5 }}>
                 <Rotate>
-                    <Model />
+                    <Suspense>
+                        <Model />
+                    </Suspense>
                 </Rotate>
                 <OrbitControls makeDefault />
             </Canvas>
