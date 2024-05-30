@@ -3,13 +3,14 @@ import React from "react";
 export default function Banner() {
     return (
         <div
-            className="bg-cover bg-gray-300 bg-blend-multiply bg-center px-10 md:px-40 h-96 place-content-center"
+            className="bg-cover bg-gray-300 bg-blend-multiply bg-center p-10 place-content-center"
             style={{
                 backgroundImage:
                     'url("https://images.unsplash.com/photo-1451187580459-43490279c0fa")',
+                height: "40rem",
             }}
         >
-            <div className="container mx-auto">
+            <div className="container">
                 <div className="text-5xl text-white/80 font-medium">
                     Digitisation
                     <br />

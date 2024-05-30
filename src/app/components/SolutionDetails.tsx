@@ -62,7 +62,7 @@ export default function SolutionDetails() {
                     <div
                         key={index}
                         id={item.id}
-                        className={`container mx-auto max-w-5xl p-5 justify-center flex flex-wrap gap-5 ${
+                        className={`container max-w-5xl p-5 justify-center flex flex-wrap gap-5 ${
                             index % 2 == 0 ? "flex-row" : "flex-row-reverse"
                         }`}
                     >

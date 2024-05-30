@@ -5,7 +5,8 @@ import SOLUTIONS from "../data/solutions";
 
 export default function Solutions() {
     return (
-        <div className="container grid md:grid-cols-3 mx-auto p-5 gap-5">
+        <div className="w-screen bg-black text-white">
+            <div className="container grid md:grid-cols-3 px-5 py-20 gap-5">
             {SOLUTIONS.map((item, index) => {
                 return (
                     <div key={index} className="mx-auto p-5 text-center">
@@ -24,6 +25,7 @@ export default function Solutions() {
                     </div>
                 );
             })}
+            </div>
         </div>
     );
 }
