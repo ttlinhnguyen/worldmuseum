@@ -1,13 +1,21 @@
-export default function Nav({...props}) {
+import NAV_ITEMS from "../data/navItems";
+
+export default function Nav({ ...props }) {
     return (
-        <nav className="container flex justify-between p-10" {...props}>
+        <nav className="container flex justify-between p-10 mx-auto" {...props}>
             <div>
-                <h1>World Museum</h1>
+                <h1 className="text-2xl font-medium">
+                    <a href="/">World Museum</a>
+                </h1>
             </div>
             <div className="grid grid-cols-3">
-                <div>Home</div>
-                <div>About</div>
-                <div>Contact</div>
+                {NAV_ITEMS.map((item) => {
+                    return (
+                        <div>
+                            <a href={item.path}>{item.name}</a>
+                        </div>
+                    );
+                })}
             </div>
         </nav>
     );
