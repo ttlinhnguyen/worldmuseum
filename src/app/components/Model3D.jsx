@@ -8,7 +8,7 @@ import { useGLTF, OrbitControls } from "@react-three/drei";
 export default function Model3D() {
     return (
         <Suspense fallback={<span>Loading...</span>}>
-            <Canvas shadows camera={{ position: [10, 4, 0], fov: 5.5 }}>
+            <Canvas shadows camera={{ position: [10, 4, 0], fov: 5.5 }} className="cursor-move">
                 <Rotate>
                     <Model />
                 </Rotate>
