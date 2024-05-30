@@ -1,5 +1,6 @@
 import React from "react";
 import NAV_ITEMS from "../data/navItems";
+import Logo from "./Logo";
 
 export default function Nav() {
     return (
@@ -7,9 +8,9 @@ export default function Nav() {
             <nav className="w-screen p-7 mx-auto absolute top-0">
                 <div className="flex justify-between container text-white">
                     <div>
-                        <h1 className="text-2xl font-medium">
-                            <a href="/">World Museum</a>
-                        </h1>
+                        <a href="/">
+                            <Logo />
+                        </a>
                     </div>
                     <div className="grid grid-cols-3">
                         {NAV_ITEMS.map((item, index) => {
