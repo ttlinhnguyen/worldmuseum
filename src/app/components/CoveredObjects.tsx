@@ -42,11 +42,11 @@ export default function CoveredObjects() {
             <FadeInDiv delay={0.8} className="flex gap-10 py-5">
                 <div className="flex">
                     <div className="w-10 h-5 bg-blue-500 rounded-full mr-3"></div>
-                    <div>Covered objects</div>
+                    <div>Covered</div>
                 </div>
                 <div className="flex">
                     <div className="w-10 h-5 bg-gray-400 rounded-full mr-3"></div>
-                    <div>Uncovered objects</div>
+                    <div>Not covered</div>
                 </div>
             </FadeInDiv>
         </div>
