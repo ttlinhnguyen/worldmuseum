@@ -18,22 +18,23 @@ export default function SolutionDetails() {
                     }}
                 ></div>
             ),
-            title: "3D Modelling",
+            title: "3D/2D Imaging",
             subtitle: "Explore every intricate detail from any angle",
             description: (
                 <div>
                     <div className="mb-3">
-                        3D Modelling brings artefacts to life in a digital
+                        3D/2D Imaging brings artefacts to life in a digital
                         space, enhancing the accessibility and interactivity of
                         our collections and reducing physical handling of
-                        fragile items. With 3D models, we can create immersive
-                        virtual tours and educational tools that provide a
-                        deeper understanding of cultural artefacts, making
-                        history more engaging and accessible to everyone.
+                        fragile items. Particularly with 3D models, we can
+                        create immersive virtual tours and educational tools
+                        that provide a deeper understanding of cultural
+                        artefacts, making history more engaging and accessible
+                        to everyone.
                     </div>
-                    <PopUp text="Show 3D Model">
+                    <PopUp text="3D Model Demo">
                         <div className="">
-                            <h3>3D Model</h3>
+                            <h3>3D Model Demo</h3>
                             <div className="text-xs italic">
                                 Click and hold to rotate. Scroll to zoom
                             </div>

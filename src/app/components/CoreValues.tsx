@@ -15,10 +15,10 @@ export default function CoreValues() {
                         <FadeInDiv
                             key={index}
                             className="p-5 hover-scale hover:bg-slate-900 rounded-lg h-full"
-                            delay={0.2 * (index + 2)}
+                            delay={0.4 * (index + 2)}
                         >
                             <div className="p-3">
-                                <FontAwesomeIcon icon={item.icon} size="3x" />
+                                <FontAwesomeIcon className="text-blue-500" icon={item.icon} size="3x" />
                             </div>
                             <h3 className="py-3">{item.name}</h3>
                             <div className="text-white/80">
