@@ -14,7 +14,7 @@ export default function Hero() {
             }}
         >
             <div className="absolute w-full h-1/3 bottom-0 left-0 bg-gradient-to-t from-black to-transparent"></div>
-            <FadeInDiv className="container text-white/80">
+            <FadeInDiv className="container text-white/80 p-5">
                 <h1 className="sm-container">
                     Digitisation
                     <br /> of World Museum

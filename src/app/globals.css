@@ -33,11 +33,13 @@ body {
 }
 
 button {
-    background-color: white;
-    color: black;
     padding: 10px;
     border-radius: 10px;
-    @apply hover:bg-cyan-500;
+    @apply bg-blue-500 hover:bg-blue-600 text-white;
+}
+
+.btn-danger {
+    @apply bg-red-500 hover:bg-red-500 text-white;
 }
 
 h1 {
@@ -65,5 +67,5 @@ h3 {
 }
 
 a {
-    @apply underline underline-offset-4 hover:text-cyan-500;
+    @apply underline underline-offset-4 hover:text-blue-500;
 }

@@ -26,10 +26,7 @@ function Loader() {
     const { progress } = useProgress();
     return (
         <div
-            className="text-white/70 text-center w-full h-full bg-cover place-content-center rounded-lg"
-            style={{
-                backgroundImage: `url("https://ttlinhnguyen.github.io/worldmuseum/cesar_louvre_museum/scene.png")`,
-            }}
+            className="text-white text-center w-full h-full bg-cover place-content-center rounded-lg"
         >
             Loading 3D Model... ({progress.toFixed(2)}%)
         </div>
