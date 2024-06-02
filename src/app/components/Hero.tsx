@@ -22,6 +22,7 @@ export default function Hero() {
                 <div className="text-xl">
                     Explore 25+ million objects from anywhere.
                 </div>
+                <button className="btn-primary my-5">Sign up</button>
                 <div className="text-xs text-white/50">
                     Photo by{" "}
                     <a href="https://unsplash.com/@nasa?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
@@ -32,7 +33,6 @@ export default function Hero() {
                         Unsplash
                     </a>
                 </div>
-                <button className="btn-primary">Sign up</button>
             </FadeInDiv>
         </div>
     );

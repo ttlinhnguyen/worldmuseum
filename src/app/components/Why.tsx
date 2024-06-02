@@ -13,16 +13,16 @@ export default function Why() {
                     return (
                         <div
                             key={index}
-                            className="bg-cover bg-center rounded-lg w-11/12 md:w-96 snap-start flex-scroll-item relative"
+                            className="bg-cover bg-center rounded-lg w-11/12 md:w-96 snap-start flex-scroll-item relative overflow-hidden"
                             style={{
                                 backgroundImage: `url("${item.image}")`,
                                 height: "35rem",
                             }}
                         >
-                            <h3 className="p-5 text-white bg-black/70 rounded-t-lg">
+                            <h3 className="p-5 text-white bg-gradient-to-b from-black/70 to-transparent text-shadow">
                                 {item.name}
                             </h3>
-                            <div className="absolute bottom-0 text-white/70 bg-black/70 p-2 rounded-bl-lg text-xs">
+                            <div className="absolute bottom-0 text-white/70 bg-black/70 p-2 text-xs">
                                 {item.credit}
                             </div>
                         </div>

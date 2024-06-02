@@ -76,3 +76,7 @@ a {
 hr {
     @apply border-2 border-blue-500 bg-blue-500 md:w-80 w-5/6 my-3;
 }
+
+.text-shadow {
+    text-shadow: 0px 2px 3px rgb(0 0 0 / 0.5);
+}
