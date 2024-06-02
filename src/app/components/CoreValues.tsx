@@ -1,16 +1,16 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import SOLUTIONS from "../data/solutions";
+import CORE_VALUES from "../data/solutions";
 import FadeInDiv from "./FadeInDiv";
 
-export default function Solutions() {
+export default function CoreValues() {
     return (
         <div className="w-screen bg-black text-white place-content-center text-center">
             <FadeInDiv className="container sm-container">
                 <h2>Our Pillars of Innovation</h2>
             </FadeInDiv>
             <div className="container grid md:grid-cols-3 px-5 py-20 gap-5">
-                {SOLUTIONS.map((item, index) => {
+                {CORE_VALUES.map((item, index) => {
                     return (
                         <FadeInDiv
                             key={index}
@@ -21,7 +21,9 @@ export default function Solutions() {
                                 <FontAwesomeIcon icon={item.icon} size="3x" />
                             </div>
                             <h3 className="py-3">{item.name}</h3>
-                            <div className="text-white/80">{item.description}</div>
+                            <div className="text-white/80">
+                                {item.description}
+                            </div>
                         </FadeInDiv>
                     );
                 })}

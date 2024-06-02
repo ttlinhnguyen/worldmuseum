@@ -1,6 +1,6 @@
 import { faCube, faLeaf, faTags } from "@fortawesome/free-solid-svg-icons";
 
-const SOLUTIONS = [
+const CORE_VALUES = [
     {
         icon: faCube,
         name: "Cultural Collections",
@@ -21,4 +21,4 @@ const SOLUTIONS = [
     },
 ];
 
-export default SOLUTIONS;
+export default CORE_VALUES;
