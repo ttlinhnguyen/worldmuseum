@@ -1,7 +1,7 @@
 import React from "react";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
-import Banner from "./components/Banner";
+import Hero from "./components/Hero";
 import Solutions from "./components/Solutions";
 import SolutionDetails from "./components/SolutionDetails";
 import { config } from "@fortawesome/fontawesome-svg-core";
@@ -13,7 +13,7 @@ export default function Home() {
         <>
             <Nav />
             <main className="">
-                <Banner />
+                <Hero />
                 <Solutions />
                 <SolutionDetails />
             </main>

@@ -3,7 +3,7 @@
 import React from "react";
 import FadeInDiv from "./FadeInDiv";
 
-export default function Banner() {
+export default function Hero() {
     return (
         <div
             className="relative bg-cover bg-gray-300 bg-blend-multiply bg-center p-10 place-content-center"
