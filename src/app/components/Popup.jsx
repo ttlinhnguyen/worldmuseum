@@ -8,7 +8,7 @@ export default function PopUp({ text, ...props }) {
     const toggle = () => setOpen(!open);
     return (
         <>
-            <button onClick={toggle}>{text}</button>
+            <button className="btn-primary" onClick={toggle}>{text}</button>
             <div
                 className={`text-center fixed z-50 top-0 left-0 w-screen h-screen place-content-center ${
                     open ? "block" : "hidden"
@@ -21,10 +21,10 @@ export default function PopUp({ text, ...props }) {
                 <div className="relative bg-white rounded-lg md:w-96 w-11/12 mx-auto my-5 p-5 z-50">
                     <button
                         onClick={toggle}
-                        className="flex btn-danger"
+                        className="flex hover:text-red-500"
                         title="Close"
                     >
-                        <FontAwesomeIcon icon={faXmark} size="lg" />
+                        <FontAwesomeIcon icon={faXmark} size="xl" />
                     </button>
                     <div className="" {...props}></div>
                 </div>

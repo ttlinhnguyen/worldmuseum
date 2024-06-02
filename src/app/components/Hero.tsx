@@ -32,7 +32,7 @@ export default function Hero() {
                         Unsplash
                     </a>
                 </div>
-                <button>Sign up</button>
+                <button className="btn-primary">Sign up</button>
             </FadeInDiv>
         </div>
     );

@@ -35,11 +35,14 @@ body {
 button {
     padding: 10px;
     border-radius: 10px;
-    @apply bg-blue-500 hover:bg-blue-600 text-white;
+}
+
+.btn-primary {
+    @apply bg-blue-500 hover:bg-blue-600 text-white hover:text-white;
 }
 
 .btn-danger {
-    @apply bg-red-500 hover:bg-red-500 text-white;
+    @apply bg-red-500 hover:bg-red-500 text-white hover:text-white;
 }
 
 h1 {
