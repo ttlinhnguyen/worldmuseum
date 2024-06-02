@@ -56,19 +56,25 @@ export default function SolutionDetails() {
         },
     ];
     return (
-        <div>
+        <div className="my-5">
+            <FadeInDiv className="container sm-container text-center">
+                <h2 className="py-10">
+                    Transform your museum experience with cutting-edge
+                    technologies
+                </h2>
+            </FadeInDiv>
             {DETAILS.map((item, index) => {
                 return (
                     <div
                         key={index}
                         id={item.id}
-                        className={`container p-10 justify-center flex flex-wrap gap-10 ${
+                        className={`container p-5 justify-center flex flex-wrap gap-10 ${
                             index % 2 == 0 ? "flex-row" : "flex-row-reverse"
                         }`}
                     >
                         <FadeInDiv className="w-screen md:w-96">
                             <div
-                                className="place-content-center rounded-lg drop-shadow bg-gradient-to-b from-slate-950 to-slate-700 relative"
+                                className="place-content-center rounded-lg drop-shadow bg-gradient-to-b from-slate-950 to-slate-700 relative w-full"
                                 style={{ height: "30rem" }}
                             >
                                 {item.media}
@@ -76,9 +82,7 @@ export default function SolutionDetails() {
                             <div className="text-xs">{item.credit}</div>
                         </FadeInDiv>
                         <FadeInDiv className="flex-auto py-10" delay={0.6}>
-                            <h3 className="text-3xl font-medium pb-5">
-                                {item.title}
-                            </h3>
+                            <h3 className="pb-5">{item.title}</h3>
                             <div>{item.description}</div>
                         </FadeInDiv>
                     </div>

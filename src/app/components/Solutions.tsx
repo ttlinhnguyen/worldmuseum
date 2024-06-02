@@ -1,40 +1,27 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import SOLUTIONS from "../data/solutions";
 import FadeInDiv from "./FadeInDiv";
 
 export default function Solutions() {
     return (
-        <div className="w-screen bg-black text-white place-content-center">
-            <FadeInDiv
-                className="container text-center text-4xl font-medium"
-                style={{ maxWidth: "50rem" }}
-            >
-                Transform your museum experience with cutting-edge technologies.
+        <div className="w-screen bg-black text-white place-content-center text-center">
+            <FadeInDiv className="container sm-container">
+                <h2>Our Pillars of Innovation</h2>
             </FadeInDiv>
-            <div className="container grid md:grid-cols-3 px-5 py-20 gap-5 place-content-center">
+            <div className="container grid md:grid-cols-3 px-5 py-20 gap-5">
                 {SOLUTIONS.map((item, index) => {
                     return (
                         <FadeInDiv
                             key={index}
-                            className="mx-auto p-5 text-center"
+                            className="p-5 transition ease-in-out hover:scale-105 hover:bg-slate-900 rounded-lg h-full"
                             delay={0.2 * (index + 2)}
                         >
                             <div className="p-3">
                                 <FontAwesomeIcon icon={item.icon} size="3x" />
                             </div>
-                            <div className="text-xl font-medium">
-                                {item.name}
-                            </div>
-                            <div>{item.description}</div>
-                            <a href={item.path} title="See more">
-                                <FontAwesomeIcon
-                                    icon={faArrowDown}
-                                    size="lg"
-                                    className="p-2 hover:scale-110"
-                                />
-                            </a>
+                            <h3 className="py-3">{item.name}</h3>
+                            <div className="text-white/80">{item.description}</div>
                         </FadeInDiv>
                     );
                 })}

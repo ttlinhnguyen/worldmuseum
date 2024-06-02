@@ -1,24 +1,23 @@
-import { faCube, faEye, faTags } from "@fortawesome/free-solid-svg-icons";
+import { faCube, faLeaf, faTags } from "@fortawesome/free-solid-svg-icons";
 
 const SOLUTIONS = [
     {
         icon: faCube,
-        name: "3D Modelling",
+        name: "Cultural Collections",
         description:
-            "Detailed models for dry, pinned objects and liquid preserved objects",
-        path: "#model-3d",
+            "We preserve and respectfully share the cultural artefacts from indigenous communities, ensuring the returning and loaning processes easier than ever.",
     },
     {
-        icon: faEye,
-        name: "AI Recognition",
-        description: "Organise and summarise Unstructured Objects",
-        path: "#ai-recognition",
+        icon: faLeaf,
+        name: "Environmental Impact",
+        description:
+            "Committed to sustainability, we aim to achieve carbon neutrality with eco-friendly digitisation solutions and energy-saving strategies.",
     },
     {
         icon: faTags,
-        name: "RFID Tracking",
-        description: "Affordable, Reliable, and Secured object tracking",
-        path: "#rfid-tracking",
+        name: "Advanced Tracking Systems",
+        description:
+            "Our system meticulously monitors 25+ million objects, enhancing security and reducing theft or misplacement.",
     },
 ];
 
