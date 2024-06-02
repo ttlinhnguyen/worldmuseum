@@ -4,6 +4,7 @@ import React from "react";
 import { Suspense, useRef } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { useGLTF, OrbitControls, useProgress } from "@react-three/drei";
+import ROOT_DIR from "../data/root";
 
 export default function Model3D() {
     return (
@@ -35,7 +36,7 @@ function Loader() {
 
 function Model() {
     const model = useGLTF(
-        "https://ttlinhnguyen.github.io/worldmuseum/cesar_louvre_museum/scene.gltf"
+        `${ROOT_DIR}/cesar_louvre_museum/scene.gltf`
     );
     return <primitive object={model.scene} position={[0, -0.2, 0]} />;
 }

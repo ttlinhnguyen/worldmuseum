@@ -5,6 +5,7 @@ import Model3D from "./Model3D";
 import LottiePlayer from "./LottiePlayer";
 import FadeInDiv from "./FadeInDiv";
 import PopUp from "./Popup";
+import ROOT_DIR from "../data/root";
 
 export default function SolutionDetails() {
     const DETAILS = [
@@ -14,7 +15,7 @@ export default function SolutionDetails() {
                 <div
                     className="bg-cover bg-center size-full rounded-lg"
                     style={{
-                        backgroundImage: `url("https://ttlinhnguyen.github.io/worldmuseum/cesar_louvre_museum/scene.png")`,
+                        backgroundImage: `url("${ROOT_DIR}/cesar_louvre_museum/scene.png")`,
                     }}
                 ></div>
             ),
@@ -65,7 +66,7 @@ export default function SolutionDetails() {
                 <div
                     className="bg-cover bg-center size-full rounded-lg"
                     style={{
-                        backgroundImage: `url("https://ttlinhnguyen.github.io/worldmuseum/ocr-cursive.jpg")`,
+                        backgroundImage: `url("${ROOT_DIR}/ocr-cursive.jpg")`,
                     }}
                 ></div>
             ),
@@ -78,8 +79,8 @@ export default function SolutionDetails() {
                     accurately classifies artefacts and interprets historical
                     texts, providing valuable insights that might otherwise be
                     missed. By leveraging AI recognition, we enhance the
-                    museum's effiency and deepen out understanding of each
-                    artefact's historical and cultural significance.
+                    museum&apos;s effiency and deepen out understanding of each
+                    artefact&apos;s historical and cultural significance.
                 </div>
             ),
         },

@@ -7,6 +7,7 @@ import Hero from "./components/Hero";
 import Why from "./components/Why";
 import CoreValues from "./components/CoreValues";
 import SolutionDetails from "./components/SolutionDetails";
+import CoveredObjects from "./components/CoveredObjects";
 import Cost from "./components/Cost";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
@@ -21,6 +22,7 @@ export default function Home() {
                 <Why />
                 <CoreValues />
                 <SolutionDetails />
+                <CoveredObjects />
                 <Cost />
             </main>
             <Footer />
