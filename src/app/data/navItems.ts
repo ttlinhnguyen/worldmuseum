@@ -1,15 +1,17 @@
+import ROOT_DIR from "./root";
+
 const NAV_ITEMS = [
     {
         name: "Home",
-        path: "/",
+        path: ROOT_DIR,
     },
     {
         name: "About",
-        path: "/about",
+        path: `${ROOT_DIR}/about`,
     },
     {
         name: "Contact",
-        path: "/contact",
+        path: `${ROOT_DIR}/contact`,
     },
 ];
 
