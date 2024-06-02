@@ -6,18 +6,20 @@ import FadeInDiv from "./FadeInDiv";
 
 export default function Solutions() {
     return (
-        <div className="w-screen bg-black text-white">
-            <div className="container grid md:grid-cols-3 px-5 py-20 gap-5">
+        <div className="w-screen bg-black text-white place-content-center">
+            <FadeInDiv
+                className="container text-center text-4xl font-medium"
+                style={{ maxWidth: "50rem" }}
+            >
+                Transform your museum experience with cutting-edge technologies.
+            </FadeInDiv>
+            <div className="container grid md:grid-cols-3 px-5 py-20 gap-5 place-content-center">
                 {SOLUTIONS.map((item, index) => {
                     return (
                         <FadeInDiv
                             key={index}
                             className="mx-auto p-5 text-center"
-                            transition={{
-                                ease: "easeInOut",
-                                delay: 0.3 * (index + 1),
-                                duration: 0.3,
-                            }}
+                            delay={0.2 * (index + 2)}
                         >
                             <div className="p-3">
                                 <FontAwesomeIcon icon={item.icon} size="3x" />
@@ -30,7 +32,7 @@ export default function Solutions() {
                                 <FontAwesomeIcon
                                     icon={faArrowDown}
                                     size="lg"
-                                    className="p-2"
+                                    className="p-2 hover:scale-110"
                                 />
                             </a>
                         </FadeInDiv>

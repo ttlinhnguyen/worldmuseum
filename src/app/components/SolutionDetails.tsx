@@ -56,17 +56,17 @@ export default function SolutionDetails() {
         },
     ];
     return (
-        <>
+        <div>
             {DETAILS.map((item, index) => {
                 return (
-                    <FadeInDiv
+                    <div
                         key={index}
                         id={item.id}
                         className={`container p-10 justify-center flex flex-wrap gap-10 ${
                             index % 2 == 0 ? "flex-row" : "flex-row-reverse"
                         }`}
                     >
-                        <div className="w-screen md:w-96">
+                        <FadeInDiv className="w-screen md:w-96">
                             <div
                                 className="place-content-center rounded-lg drop-shadow bg-gradient-to-b from-slate-950 to-slate-700 relative"
                                 style={{ height: "30rem" }}
@@ -74,16 +74,16 @@ export default function SolutionDetails() {
                                 {item.media}
                             </div>
                             <div className="text-xs">{item.credit}</div>
-                        </div>
-                        <div className="flex-auto py-10">
+                        </FadeInDiv>
+                        <FadeInDiv className="flex-auto py-10" delay={0.6}>
                             <h3 className="text-3xl font-medium pb-5">
                                 {item.title}
                             </h3>
                             <div>{item.description}</div>
-                        </div>
-                    </FadeInDiv>
+                        </FadeInDiv>
+                    </div>
                 );
             })}
-        </>
+        </div>
     );
 }
