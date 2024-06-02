@@ -9,6 +9,7 @@ import CoreValues from "./components/CoreValues";
 import SolutionDetails from "./components/SolutionDetails";
 import CoveredObjects from "./components/CoveredObjects";
 import Cost from "./components/Cost";
+import OurTeam from "./components/OurTeam";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 config.autoAddCss = false;
@@ -24,6 +25,7 @@ export default function Home() {
                 <SolutionDetails />
                 <CoveredObjects />
                 <Cost />
+                <OurTeam />
             </main>
             <Footer />
         </>

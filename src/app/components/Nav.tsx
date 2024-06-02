@@ -1,6 +1,7 @@
 import React from "react";
 import NAV_ITEMS from "../data/navItems";
 import Logo from "./Logo";
+import ROOT_DIR from "../data/root";
 
 export default function Nav() {
     return (
@@ -8,7 +9,7 @@ export default function Nav() {
             <nav className="w-screen p-7 mx-auto absolute top-0">
                 <div className="flex justify-between container text-white">
                     <div>
-                        <a href="/">
+                        <a href={ROOT_DIR}>
                             <Logo />
                         </a>
                     </div>
