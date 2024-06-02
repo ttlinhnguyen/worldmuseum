@@ -1,11 +1,11 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import CORE_VALUES from "../data/solutions";
+import CORE_VALUES from "../data/coreValues";
 import FadeInDiv from "./FadeInDiv";
 
 export default function CoreValues() {
     return (
-        <div className="w-screen bg-black text-white place-content-center text-center">
+        <div className="w-screen bg-black text-white place-content-center text-center py-10">
             <FadeInDiv className="container sm-container">
                 <h2>Our Pillars of Innovation</h2>
             </FadeInDiv>
@@ -14,7 +14,7 @@ export default function CoreValues() {
                     return (
                         <FadeInDiv
                             key={index}
-                            className="p-5 transition ease-in-out hover:scale-105 hover:bg-slate-900 rounded-lg h-full"
+                            className="p-5 hover-scale hover:bg-slate-900 rounded-lg h-full"
                             delay={0.2 * (index + 2)}
                         >
                             <div className="p-3">

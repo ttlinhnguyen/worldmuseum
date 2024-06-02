@@ -37,6 +37,7 @@ button {
     color: black;
     padding: 10px;
     border-radius: 10px;
+    @apply hover:bg-cyan-500;
 }
 
 h1 {
@@ -48,9 +49,21 @@ h2 {
 }
 
 h3 {
-    @apply text-3xl;
+    @apply text-2xl font-medium;
 }
 
 .sm-container {
     max-width: 50rem;
+}
+
+.flex-scroll-item {
+    flex: 0 0 auto;
+}
+
+.hover-scale {
+    @apply transition ease-in-out hover:scale-105;
+}
+
+a {
+    @apply underline underline-offset-4 hover:text-cyan-500;
 }
