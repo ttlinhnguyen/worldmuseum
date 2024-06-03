@@ -7,7 +7,7 @@ import FadeInDiv from "./FadeInDiv";
 import PopUp from "./Popup";
 import ROOT_DIR from "../data/root";
 
-export default function SolutionDetails() {
+export default function SolutionDetails({ ...props }) {
     const DETAILS = [
         {
             id: "model-3d",
@@ -109,7 +109,7 @@ export default function SolutionDetails() {
         },
     ];
     return (
-        <div className="m-5">
+        <div className="m-5" {...props}>
             <FadeInDiv className="container sm-container text-center">
                 <h2 className="py-10">
                     Transform your museum experience with cutting-edge
@@ -120,7 +120,6 @@ export default function SolutionDetails() {
                 return (
                     <FadeInDiv
                         key={index}
-                        id={item.id}
                         className={`container my-10 justify-between flex bg-white shadow flex-col ${
                             index % 2 == 0
                                 ? "md:flex-row"

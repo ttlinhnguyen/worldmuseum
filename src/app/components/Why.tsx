@@ -2,9 +2,9 @@ import React from "react";
 import WHY from "../data/whyItems";
 import FadeInDiv from "./FadeInDiv";
 
-export default function Why() {
+export default function Why({ ...props }) {
     return (
-        <div className="bg-black py-10">
+        <div className="bg-black py-10" {...props}>
             <FadeInDiv className="container sm-container text-white text-center pb-10">
                 <h2>Why digitisation?</h2>
             </FadeInDiv>

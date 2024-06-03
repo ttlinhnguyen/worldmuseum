@@ -2,7 +2,7 @@ import React from "react";
 import Accordion from "./Accordion";
 import FadeInDiv from "./FadeInDiv";
 
-export default function Cost() {
+export default function Cost({ ...props }) {
     const COST = [
         {
             title: "3D/2D Imaging Equipment",
@@ -81,7 +81,7 @@ export default function Cost() {
         },
     ];
     return (
-        <div className="container py-10 px-10">
+        <div className="container py-10 px-10" {...props}>
             <FadeInDiv>
                 <h2 className="text-center py-10">Cost of Implementation</h2>
             </FadeInDiv>

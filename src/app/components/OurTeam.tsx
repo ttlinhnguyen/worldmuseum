@@ -1,7 +1,7 @@
 import React from "react";
 import FadeInDiv from "./FadeInDiv";
 
-export default function OurTeam() {
+export default function OurTeam({ ...props }) {
     const TEAM = [
         {
             name: "Jasper Harding",
@@ -21,14 +21,17 @@ export default function OurTeam() {
     ];
 
     return (
-        <FadeInDiv className="container text-center mx-auto p-10">
+        <FadeInDiv className="container text-center mx-auto p-10" {...props}>
             <div className="text-center py-10">
                 <h2>Our Team</h2>
             </div>
             <div className="grid md:grid-cols-3">
                 {TEAM.map((item, index) => {
                     return (
-                        <div key={index} className="h-20 p-3 hover-scale place-content-center">
+                        <div
+                            key={index}
+                            className="h-20 p-3 hover-scale place-content-center"
+                        >
                             <div>{item.name}</div>
                         </div>
                     );

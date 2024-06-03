@@ -2,9 +2,9 @@ import React from "react";
 import FadeInDiv from "./FadeInDiv";
 import COLLECTION from "../data/collection";
 
-export default function CoveredObjects() {
+export default function CoveredObjects({ ...props }) {
     return (
-        <div className="container p-10">
+        <div className="container p-10" {...props}>
             <FadeInDiv className="text-center py-10">
                 <h2>
                     Our solutions cover{" "}

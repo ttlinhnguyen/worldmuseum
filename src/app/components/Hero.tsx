@@ -3,7 +3,7 @@
 import React from "react";
 import FadeInDiv from "./FadeInDiv";
 
-export default function Hero() {
+export default function Hero({ ...props }) {
     return (
         <div
             className="relative bg-cover bg-gray-300 bg-blend-multiply bg-center place-content-center"
@@ -12,6 +12,7 @@ export default function Hero() {
                     'url("https://images.unsplash.com/photo-1451187580459-43490279c0fa")',
                 height: "55rem",
             }}
+            {...props}
         >
             <div className="absolute w-full h-1/3 bottom-0 left-0 bg-gradient-to-t from-black to-transparent"></div>
             <FadeInDiv className="container text-white/80 p-5">
