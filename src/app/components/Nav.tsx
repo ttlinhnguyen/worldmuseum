@@ -4,6 +4,7 @@ import Logo from "./Logo";
 import ROOT_DIR from "../data/root";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { motion } from "framer-motion";
 
 export default function Nav() {
     const [open, setOpen] = useState(false);
@@ -34,7 +35,15 @@ export default function Nav() {
                     className="absolute top-0 left-0 w-full h-full bg-black/50 "
                     onClick={toggle}
                 ></div>
-                <div className="absolute h-full w-96 top-0 right-0 py-5 px-10 bg-white">
+                <motion.div
+                    className="absolute h-full w-96 top-0 right-0 py-5 px-10 bg-white"
+                    animate={open ? "open" : "closed"}
+                    variants={{
+                        open: { opacity: 1, x: 0 },
+                        closed: { opacity: 0, x: "100%" },
+                    }}
+                    transition={{ bounce: 0 }}
+                >
                     <div className="flex justify-end">
                         <button onClick={toggle} className="hover:text-red-500">
                             <FontAwesomeIcon icon={faXmark} size="xl" />
@@ -47,7 +56,7 @@ export default function Nav() {
                             </a>
                         );
                     })}
-                </div>
+                </motion.div>
             </div>
         </>
     );
