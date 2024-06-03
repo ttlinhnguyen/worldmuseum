@@ -15,7 +15,7 @@ export default function Accordion({ title, content }) {
                 <FontAwesomeIcon icon={open ? faChevronUp : faChevronDown} />
             </div>
             <div
-                className={`overflow-hidden transition-max-height duration-300 ease-in-out ${
+                className={`overflow-hidden transition-max-height duration-500 ease-in-out ${
                     open ? "max-h-screen" : "max-h-0"
                 }`}
             >
