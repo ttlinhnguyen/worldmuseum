@@ -19,13 +19,13 @@ export default function Home() {
         <>
             <Nav />
             <main className="">
-                <Hero />
-                <Why />
-                <CoreValues />
-                <SolutionDetails />
-                <CoveredObjects />
-                <Cost />
-                <OurTeam />
+                <Hero id="hero" />
+                <Why id="why" />
+                <CoreValues id="values" />
+                <SolutionDetails id="solutions" />
+                <CoveredObjects id="collection" />
+                <Cost id="cost" />
+                <OurTeam id="about" />
             </main>
             <Footer />
         </>

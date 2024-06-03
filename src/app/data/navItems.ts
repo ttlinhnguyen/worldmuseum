@@ -6,12 +6,28 @@ const NAV_ITEMS = [
         path: ROOT_DIR,
     },
     {
-        name: "About",
-        path: `${ROOT_DIR}/about`,
+        name: "Why Digitisation",
+        path: "#why"
     },
     {
-        name: "Contact",
-        path: `${ROOT_DIR}/contact`,
+        name: "Our Values",
+        path: "#values"
+    },
+    {
+        name: "Solutions",
+        path: "#solutions"
+    },
+    {
+        name: "Collection",
+        path: "#collection"
+    },
+    {
+        name: "Cost",
+        path: "#cost"
+    },
+    {
+        name: "About us",
+        path: "#about"
     },
 ];
 

@@ -42,7 +42,7 @@ export default function Nav() {
                     </div>
                     {NAV_ITEMS.map((item, index) => {
                         return (
-                            <a href={item.path} key={index}>
+                            <a href={item.path} key={index} onClick={toggle}>
                                 <div className="py-3">{item.name}</div>
                             </a>
                         );
