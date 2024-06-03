@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
+import { easeInOut, motion } from "framer-motion";
 
 export default function PopUp({ text, ...props }) {
     const [open, setOpen] = useState(false);
@@ -20,7 +21,12 @@ export default function PopUp({ text, ...props }) {
                     className="absolute top-0 left-0 w-full h-full bg-black/50 "
                     onClick={toggle}
                 ></div>
-                <div className="relative bg-white rounded-lg md:w-96 w-11/12 mx-auto my-5 p-5 z-40">
+                <motion.div
+                    className="relative bg-white rounded-lg md:w-96 w-11/12 mx-auto my-5 p-5 z-40"
+                    animate={open ? "open" : "closed"}
+                    variants={{ open: { opacity: 1 }, closed: { opacity: 0 } }}
+                    transition={{ bounce: 0, ease: easeInOut }}
+                >
                     <div className="flex justify-end">
                         <button
                             onClick={toggle}
@@ -31,7 +37,7 @@ export default function PopUp({ text, ...props }) {
                         </button>
                     </div>
                     <div className="" {...props}></div>
-                </div>
+                </motion.div>
             </div>
         </>
     );
