@@ -44,7 +44,7 @@ export default function Footer({ ...props }) {
                     <div className="flex gap-5 py-3">
                         {SOCIALS.map((item, index) => {
                             return (
-                                <a href={item.link}>
+                                <a href={item.link} key={index}>
                                     <FontAwesomeIcon
                                         icon={item.icon}
                                         size="xl"
