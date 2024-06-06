@@ -15,7 +15,7 @@ export default function SolutionDetails({ ...props }) {
                 <div
                     className="bg-cover bg-center size-full rounded-lg"
                     style={{
-                        backgroundImage: `url("${ROOT_DIR}/cesar_louvre_museum/scene.png")`,
+                        backgroundImage: `url("https://i.imgur.com/BoP8rsv.png")`,
                     }}
                 ></div>
             ),
@@ -66,7 +66,7 @@ export default function SolutionDetails({ ...props }) {
                 <div
                     className="bg-cover bg-center size-full rounded-lg"
                     style={{
-                        backgroundImage: `url("${ROOT_DIR}/ocr-cursive.jpg")`,
+                        backgroundImage: `url("https://i.imgur.com/XYAAyMA.jpeg")`,
                     }}
                 ></div>
             ),
