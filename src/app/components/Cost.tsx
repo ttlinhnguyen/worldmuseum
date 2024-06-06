@@ -9,10 +9,10 @@ export default function Cost({ ...props }) {
             <FadeInDiv>
                 <h2 className="text-center py-10">Cost of Implementation</h2>
             </FadeInDiv>
-            <div className="grid md:grid-cols-6">
+            <div className="grid md:grid-cols-6 gap-5">
                 <FadeInDiv className="place-content-center col-span-2">
                     <h3>Total Cost</h3>
-                    <div className="text-6xl text-blue-500">$740M</div>
+                    <div className="text-6xl text-blue-500">$120.7M</div>
                     <div>over the course of 5 years</div>
                 </FadeInDiv>
                 <FadeInDiv className="col-span-4" delay={0.8}>

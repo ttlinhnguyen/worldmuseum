@@ -1,7 +1,7 @@
 const COST = [
     {
         title: "3D/2D Imaging Equipment",
-        cost: "$70,000",
+        cost: "$11,810,000",
         description: (
             <>
                 <div className="mb-2">
@@ -20,7 +20,7 @@ const COST = [
     },
     {
         title: "AI Recognition Technology",
-        cost: "$5,000",
+        cost: "$430,000",
         description: (
             <>
                 <div className="mb-2">
@@ -37,7 +37,7 @@ const COST = [
     },
     {
         title: "RFID Technology",
-        cost: "$10,800,000",
+        cost: "$10,700,000",
         description: (
             <>
                 <div className="mb-2">
@@ -55,12 +55,12 @@ const COST = [
     },
     {
         title: "Labour & Training",
-        cost: "$730,000,000",
+        cost: "$97,760,000",
         description: (
             <>
                 <div className="mb-2">
-                    The cost includes hiring skilled personnel to manage and
-                    operate new technologies and training existing staff to use
+                    The cost includes hiring skilled personnel to operate and
+                    develop new technologies, and training existing staff to use
                     these system effectively.
                 </div>
                 <div>

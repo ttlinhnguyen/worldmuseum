@@ -8,7 +8,7 @@ export default function Accordion({ title, content }) {
     return (
         <div>
             <div
-                className="flex justify-between place-content-center cursor-pointer"
+                className="flex justify-between place-content-center cursor-pointer select-none"
                 onClick={toggle}
             >
                 <div>{title}</div>
