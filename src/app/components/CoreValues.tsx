@@ -15,21 +15,19 @@ export default function CoreValues({ ...props }) {
             <div className="container grid md:grid-cols-3 px-5 py-20 gap-5">
                 {CORE_VALUES.map((item, index) => {
                     return (
-                        <FadeInDiv
-                            key={index}
-                            className="p-5 hover-scale hover:bg-slate-900 rounded-lg h-full"
-                            delay={0.4 * (index + 2)}
-                        >
-                            <div className="p-3">
-                                <FontAwesomeIcon
-                                    className="text-blue-500"
-                                    icon={item.icon}
-                                    size="3x"
-                                />
-                            </div>
-                            <h3 className="py-3">{item.name}</h3>
-                            <div className="text-white/80">
-                                {item.description}
+                        <FadeInDiv key={index} delay={0.4 * (index + 2)}>
+                            <div className="hover-scale hover:bg-slate-900 p-5 rounded-lg">
+                                <div className="p-3">
+                                    <FontAwesomeIcon
+                                        className="text-blue-500"
+                                        icon={item.icon}
+                                        size="3x"
+                                    />
+                                </div>
+                                <h3 className="py-3">{item.name}</h3>
+                                <div className="text-white/80">
+                                    {item.description}
+                                </div>
                             </div>
                         </FadeInDiv>
                     );
